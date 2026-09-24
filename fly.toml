@@ -1,12 +1,19 @@
-app = "climbingtornado-intervals-mcp"
-primary_region = "ams"
+# fly.toml app configuration file generated for intervals-icu-mcp-avcuxw on 2026-09-24T08:39:56Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'intervals-icu-mcp-avcuxw'
+primary_region = 'ams'
+
+[build]
 
 [http_service]
-  internal_port = 8000
-  auto_stop_machines = "stop"
+  internal_port = 8080
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
 
 [[vm]]
-  size = "shared-cpu-1x"
-  memory = "256mb"
+  size = 'shared-cpu-1x'
+  memory = '256mb'
