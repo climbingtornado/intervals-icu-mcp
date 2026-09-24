@@ -1,4 +1,4 @@
-app = "climbingtornado-intervals-mcp"
+app = "intervals-icu-mcp-avcuxw"
 primary_region = "ams"
 
 [http_service]
