@@ -48,3 +48,4 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 
 # Run the MCP server
 ENTRYPOINT ["python", "-m", "intervals_icu_mcp.server"]
+CMD ["--transport", "http", "--host", "0.0.0.0", "--port", "8000"]
